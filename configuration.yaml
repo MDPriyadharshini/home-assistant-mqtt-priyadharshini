@@ -1,0 +1,16 @@
+mqtt:
+  sensor:
+    - name: "Room Temperature"
+      state_topic: "home/priyadharshini-2025/sensor"
+      unit_of_measurement: "°C"
+      value_template: "{{ value_json.temperature }}"
+
+    - name: "Room Humidity"
+      state_topic: "home/priyadharshini-2025/sensor"
+      unit_of_measurement: "%"
+      value_template: "{{ value_json.humidity }}"
+
+    - name: "Light Intensity"
+      state_topic: "home/priyadharshini-2025/sensor"
+      unit_of_measurement: "lx"
+      value_template: "{{ value_json.light }}"
